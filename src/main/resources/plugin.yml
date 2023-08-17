@@ -1,0 +1,54 @@
+name: 'SjorPvP'
+description: "Adds some useful features for a pvp server"
+main: dev.drekamor.sjorpvp.SjorPvP
+version: '1.0.1'
+api-version: '1.18'
+
+commands:
+  inventory:
+    description: Manage inventories
+    permission: sjorpvp.inventory
+    usage: "Usage: /<command> [load | save | remove | list] <inventory | none>"
+    aliases: [ inv ]
+  warp:
+    description: Warp to a location
+    permission: sjorpvp.warp
+    usage: "Usage: /<command> <warp>"
+  warps:
+    description: Manage warps
+    permission: sjorpvp.warps
+    usage: "Usage: /<command> [save | remove | list] <warp | none>"
+  stats:
+    description: See statistics
+    permission: sjorpvp.stats
+    usage: "Usage: /<command>"
+  team:
+    description: Choose a team
+    permission: sjorpvp.team
+    usage: "Usage /<command>"
+  spectate:
+    description: Spectate a player
+    permission: sjorpvp.spectate
+    usage: "Usage /<command> <player | none>"
+
+
+permissions:
+  sjorpvp.inventory:
+    description: Allows managing and using inventories
+    default: true
+  sjorpvp.warp:
+    description: Allows using warps
+    default: true
+  sjorpvp.warps:
+    description: Allows managing warps
+    default: op
+  sjorpvp.stats:
+    description: Allows accessing own statistics
+    default: true
+  sjorpvp.team:
+    description: Allows choosing a team
+    default: true
+  sjorpvp.spectate:
+    description: Allows spectating players
+    default: true
+

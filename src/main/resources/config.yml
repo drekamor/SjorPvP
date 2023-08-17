@@ -1,0 +1,26 @@
+sql:
+  database: "sjorpvp"
+  user: "sjorpvp"
+  password: "sjorpvp"
+  host: "localhost"
+  port: 3306
+  poolSize: 10
+  connectionTimeout: 30000
+  idleTimeout: 600000
+  maxLifetime: 7200000
+inventories:
+  limit:
+    enabled: false
+    maximum: 5
+warps:
+  limit:
+    enabled: false
+    maximum: 5
+teams:
+  blue:
+    colour: "blue"
+  red:
+    colour: "red"
+messages:
+  - "Good night sweet princess"
+  - "The King is dead, welcome the King"
