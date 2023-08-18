@@ -97,6 +97,9 @@ public class Database {
 
                 return new String[]{sic, sac};
             }
+            statement.close();
+            result.close();
+            connection.close();
         } catch (Exception e) {
             plugin.severe("Unable to get inventory %s from database.".formatted(name));
             e.printStackTrace();
@@ -131,6 +134,9 @@ public class Database {
                 connection.close();
                 return count;
             }
+            statement.close();
+            result.close();
+            connection.close();
         } catch (Exception e) {
             plugin.severe("Unable to get inventory count.");
             e.printStackTrace();
@@ -153,6 +159,9 @@ public class Database {
                 connection.close();
                 return names;
             }
+            statement.close();
+            result.close();
+            connection.close();
         } catch (Exception e) {
             plugin.severe("Unable to get the inventory list.");
             e.printStackTrace();
@@ -190,6 +199,9 @@ public class Database {
 
                 return location;
             }
+            statement.close();
+            result.close();
+            connection.close();
         } catch (Exception e) {
             plugin.severe("Unable to get warp %s from database.".formatted(name));
             e.printStackTrace();
@@ -224,6 +236,9 @@ public class Database {
                 connection.close();
                 return count;
             }
+            statement.close();
+            result.close();
+            connection.close();
         } catch (Exception e) {
             plugin.severe("Unable to get warp count.");
             e.printStackTrace();
@@ -246,6 +261,9 @@ public class Database {
                 connection.close();
                 return names;
             }
+            statement.close();
+            result.close();
+            connection.close();
         } catch (Exception e) {
             plugin.severe("Unable to get the warps list.");
             e.printStackTrace();
@@ -282,6 +300,9 @@ public class Database {
 
                 return stats;
             }
+            statement.close();
+            result.close();
+            connection.close();
         } catch (Exception e) {
             plugin.severe("Unable to get stats for %s from database.".formatted(uuid));
             e.printStackTrace();
