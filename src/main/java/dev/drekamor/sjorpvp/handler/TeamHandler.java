@@ -22,10 +22,12 @@ public class TeamHandler {
         if(team.equals("clear")){
             player.displayName(Component.text(ChatColor.stripColor(player.getName())));
             player.playerListName(Component.text(ChatColor.stripColor(player.getName())));
+            player.customName(Component.text(ChatColor.stripColor(player.getName())));
             return true;
         }
         player.displayName(Component.text(getColour(this.plugin.getSjorConfig().getColour(team)) + player.getName()));
         player.playerListName(Component.text(getColour(this.plugin.getSjorConfig().getColour(team)) + player.getName()));
+        player.customName(Component.text(getColour(this.plugin.getSjorConfig().getColour(team)) + player.getName()));
         return true;
     }
     private ChatColor getColour(String colour){
